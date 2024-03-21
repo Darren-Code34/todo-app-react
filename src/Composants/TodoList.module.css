@@ -1,0 +1,45 @@
+
+.todolistContainer{
+  position: absolute;
+  width: 300px;
+  top: -25px;
+  left: 50%;
+  transform: translateX(-50%);
+  border: solid 1px transparent;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
+  box-shadow: 0 10px 20px  hsl(236, 9%, 61%);
+}
+
+/* dark theme */
+
+.todolistContainerDark{
+  position: absolute;
+  width: 300px;
+  top: -25px;
+  left: 50%;
+  transform: translateX(-50%);
+  border: solid 1px transparent;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
+}
+
+/* Resonsive */
+
+@media only screen and (min-width: 768px) {
+
+  .todolistContainer, .todolistContainerDark{
+    width: 400px;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+
+  .todolistContainer, .todolistContainerDark{
+    width: 600px;
+  }
+}

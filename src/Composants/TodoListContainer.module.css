@@ -1,0 +1,17 @@
+.container{
+  background: #fff;
+  padding: 0 15px 20px;
+  position: relative;
+  z-index: 1;
+  height: 100vh;
+}
+
+/* darkTheme */
+
+.containerDark{
+  background-color: hsl(235, 21%, 11%);
+  padding: 0 15px 50px;
+  position: relative;
+  z-index: 1;
+  height: 100vh;
+}

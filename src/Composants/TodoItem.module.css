@@ -1,0 +1,97 @@
+.item {
+  width: 100%;
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  padding: 12px 20px;
+  background-color: #fff;
+  border-bottom: 1px solid hsl(233, 11%, 84%);
+  color: hsl(236, 9%, 43%);
+}
+
+.item:first-child {
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+}
+.item:last-child {
+  border-bottom: none;
+}
+
+.checkbox {
+  border: solid 1px hsl(233, 11%, 84%);
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  margin-right: 15px;
+}
+
+.checkedBox {
+  border: solid 1px hsl(233, 11%, 84%);
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  margin-right: 15px;
+  background: center / 50% no-repeat url(../assets/images/icon-check.svg),
+    linear-gradient(hsl(192, 100%, 67%), hsl(280, 87%, 65%));
+}
+
+.taskChecked{
+  text-decoration: line-through;
+  font-style: italic
+}
+
+.deleteButton {
+  margin-right: 0;
+  margin-left: auto;
+}
+
+/* dark theme */
+
+.itemDark {
+  width: 100%;
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  padding: 12px 20px;
+  background-color: hsl(235, 24%, 19%);
+  border-bottom: 1px solid hsl(234, 11%, 52%);
+  color: hsl(234, 11%, 52%);
+}
+
+.itemDark span {
+  color: #fff;
+}
+
+.itemDark:first-child {
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+}
+.itemDark:last-child {
+  border-bottom: none;
+}
+
+.checkboxDark {
+  border: solid 1px hsl(234, 11%, 52%);
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  margin-right: 15px;
+}
+
+
+/* Responsive */
+
+@media only screen and (min-width: 768px) {
+
+  .item, .itemDark{
+    width: 400px;
+  }
+}
+
+
+@media only screen and (min-width: 1000px) {
+
+  .item, .itemDark{
+    width: 600px;
+  }
+}
